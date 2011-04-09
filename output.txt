@@ -1,0 +1,131 @@
+loading autotest/rails_rspec2
+C:\Ruby192\bin\ruby -rrubygems -S C:/Ruby192/lib/ruby/gems/1.9.1/gems/rspec-core-2.5.1/bin/rspec --tty 'C:/Users/Admin/rails_project/sample_app/spec/controllers/pages_controller_spec.rb' 'C:/Users/Admin/rails_project/sample_app/spec/requests/layout_links_spec.rb'
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[31mF[0m[31mF[0m
+
+Failures:
+
+  1) LayoutLinks should have a Contact page at '/contact'
+     [31mFailure/Error:[0m [31mresponse.should have_selector( 'title', :content => "Contact" )[0m
+       [31mexpected following output to contain a <title>Contact</title> tag:[0m
+       [31m<!DOCTYPE html>[0m
+       [31m<html>[0m
+       [31m<head>[0m
+       [31m<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">[0m
+       [31m<title>Ruby on Rails Tutorial Sample App | Home</title>[0m
+       [31m<!--[if lt IE 9]>[0m
+       [31m    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>[0m
+       [31m    <![endif]--><link href="/stylesheets/blueprint/screen.css?1301808904" media="screen" rel="stylesheet" type="text/css">[0m
+       [31m<link href="/stylesheets/blueprint/print.css?1301808904" media="print" rel="stylesheet" type="text/css">[0m
+       [31m<!--[if lt IE 8]><link href="/stylesheets/blueprint/ie.css?1301808904" media="screen" rel="stylesheet" type="text/css" /><![endif]--><link href="/stylesheets/custom.css?1302351456" media="screen" rel="stylesheet" type="text/css">[0m
+       [31m</head>[0m
+       [31m<body>[0m
+       [31m  <div class="container">[0m
+       [31m[0m
+       [31m    fs      <header><a href="/"><img alt="Sample App" class="round" src="/images/logo.png?1302350552"></a>[0m
+       [31m        <nav class="round"><ul>[0m
+       [31m<li><a href="/">Home</a></li>[0m
+       [31m            <li><a href="/help">Help</a></li>[0m
+       [31m            <li><a href="#">Sign in</a></li>[0m
+       [31m          </ul></nav></header><section class="round"><h1>Sample App</h1>[0m
+       [31m<p>[0m
+       [31mThis is the home page for the[0m
+       [31m<a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>[0m
+       [31msample application.[0m
+       [31m</p>[0m
+       [31m[0m
+       [31m<a href="#" class="signup_button round">Sign up now!</a>[0m
+       [31m      </section><footer><nav class="round"><ul>[0m
+       [31m<li><a href="/about">About</a></li>[0m
+       [31m      <li><a href="/contact">Contact</a></li>[0m
+       [31m      <li><a href="http://news.railstutorial.org/">News</a></li>[0m
+       [31m      <li><a href="http://www.railstutorial.org/">Rails Tutorial</a></li>[0m
+       [31m    </ul></nav></footer>[0m
+       [31m</div>[0m
+       [31m  </body>[0m
+       [31m</html>[0m
+[90m     # ./spec/requests/layout_links_spec.rb:12:in `block (2 levels) in <top (required)>'[0m
+
+  2) LayoutLinks should have a About page at '/about'
+     [31mFailure/Error:[0m [31mresponse.should have_selector( 'title', :content => "About" )[0m
+       [31mexpected following output to contain a <title>About</title> tag:[0m
+       [31m<!DOCTYPE html>[0m
+       [31m<html>[0m
+       [31m<head>[0m
+       [31m<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">[0m
+       [31m<title>Ruby on Rails Tutorial Sample App | Home</title>[0m
+       [31m<!--[if lt IE 9]>[0m
+       [31m    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>[0m
+       [31m    <![endif]--><link href="/stylesheets/blueprint/screen.css?1301808904" media="screen" rel="stylesheet" type="text/css">[0m
+       [31m<link href="/stylesheets/blueprint/print.css?1301808904" media="print" rel="stylesheet" type="text/css">[0m
+       [31m<!--[if lt IE 8]><link href="/stylesheets/blueprint/ie.css?1301808904" media="screen" rel="stylesheet" type="text/css" /><![endif]--><link href="/stylesheets/custom.css?1302351456" media="screen" rel="stylesheet" type="text/css">[0m
+       [31m</head>[0m
+       [31m<body>[0m
+       [31m  <div class="container">[0m
+       [31m[0m
+       [31m    fs      <header><a href="/"><img alt="Sample App" class="round" src="/images/logo.png?1302350552"></a>[0m
+       [31m        <nav class="round"><ul>[0m
+       [31m<li><a href="/">Home</a></li>[0m
+       [31m            <li><a href="/help">Help</a></li>[0m
+       [31m            <li><a href="#">Sign in</a></li>[0m
+       [31m          </ul></nav></header><section class="round"><h1>Sample App</h1>[0m
+       [31m<p>[0m
+       [31mThis is the home page for the[0m
+       [31m<a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>[0m
+       [31msample application.[0m
+       [31m</p>[0m
+       [31m[0m
+       [31m<a href="#" class="signup_button round">Sign up now!</a>[0m
+       [31m      </section><footer><nav class="round"><ul>[0m
+       [31m<li><a href="/about">About</a></li>[0m
+       [31m      <li><a href="/contact">Contact</a></li>[0m
+       [31m      <li><a href="http://news.railstutorial.org/">News</a></li>[0m
+       [31m      <li><a href="http://www.railstutorial.org/">Rails Tutorial</a></li>[0m
+       [31m    </ul></nav></footer>[0m
+       [31m</div>[0m
+       [31m  </body>[0m
+       [31m</html>[0m
+[90m     # ./spec/requests/layout_links_spec.rb:17:in `block (2 levels) in <top (required)>'[0m
+
+  3) LayoutLinks should have a Help page at '/help'
+     [31mFailure/Error:[0m [31mresponse.should have_selector( 'title', :content => "Help" )[0m
+       [31mexpected following output to contain a <title>Help</title> tag:[0m
+       [31m<!DOCTYPE html>[0m
+       [31m<html>[0m
+       [31m<head>[0m
+       [31m<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">[0m
+       [31m<title>Ruby on Rails Tutorial Sample App | Home</title>[0m
+       [31m<!--[if lt IE 9]>[0m
+       [31m    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>[0m
+       [31m    <![endif]--><link href="/stylesheets/blueprint/screen.css?1301808904" media="screen" rel="stylesheet" type="text/css">[0m
+       [31m<link href="/stylesheets/blueprint/print.css?1301808904" media="print" rel="stylesheet" type="text/css">[0m
+       [31m<!--[if lt IE 8]><link href="/stylesheets/blueprint/ie.css?1301808904" media="screen" rel="stylesheet" type="text/css" /><![endif]--><link href="/stylesheets/custom.css?1302351456" media="screen" rel="stylesheet" type="text/css">[0m
+       [31m</head>[0m
+       [31m<body>[0m
+       [31m  <div class="container">[0m
+       [31m[0m
+       [31m    fs      <header><a href="/"><img alt="Sample App" class="round" src="/images/logo.png?1302350552"></a>[0m
+       [31m        <nav class="round"><ul>[0m
+       [31m<li><a href="/">Home</a></li>[0m
+       [31m            <li><a href="/help">Help</a></li>[0m
+       [31m            <li><a href="#">Sign in</a></li>[0m
+       [31m          </ul></nav></header><section class="round"><h1>Sample App</h1>[0m
+       [31m<p>[0m
+       [31mThis is the home page for the[0m
+       [31m<a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>[0m
+       [31msample application.[0m
+       [31m</p>[0m
+       [31m[0m
+       [31m<a href="#" class="signup_button round">Sign up now!</a>[0m
+       [31m      </section><footer><nav class="round"><ul>[0m
+       [31m<li><a href="/about">About</a></li>[0m
+       [31m      <li><a href="/contact">Contact</a></li>[0m
+       [31m      <li><a href="http://news.railstutorial.org/">News</a></li>[0m
+       [31m      <li><a href="http://www.railstutorial.org/">Rails Tutorial</a></li>[0m
+       [31m    </ul></nav></footer>[0m
+       [31m</div>[0m
+       [31m  </body>[0m
+       [31m</html>[0m
+[90m     # ./spec/requests/layout_links_spec.rb:22:in `block (2 levels) in <top (required)>'[0m
+
+Finished in 6.89 seconds
+[31m10 examples, 3 failures[0m
